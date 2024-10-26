@@ -104,7 +104,6 @@ Feel free to fork the repository, make improvements, and submit a pull request. 
 ---
 
 ## **Contact**
-For questions or support, please refer to the project GitHub repository:  
-[Project Repository](https://github.com/moraestopia/cmse492_project)
+For questions or support, please refer to moraesjo(at)msu(dot)edu
 
 ---
