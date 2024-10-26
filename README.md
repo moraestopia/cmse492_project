@@ -67,27 +67,22 @@ Make sure you have the following dependencies installed:
    cd cmse492_project
    ```
 
-2. **Install the dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Explore the dataset**:
+2. **Explore the dataset**:
    ```bash
    jupyter notebook data_exploration/data_exploration.ipynb
    ```
 
-4. **Run the Black-Scholes model**:
+3. **Run the Black-Scholes model**:
    ```bash
    python black_scholes/black_scholes.py
    ```
 
-5. **Train the MLP model**:
+4. **Train the MLP model**:
    ```bash
    python MLP/train_mlp.py
    ```
 
-6. **View the results**:
+5. **View the results**:
    Check the `results/` directory for evaluation metrics and plots.
 
 ---
