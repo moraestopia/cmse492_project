@@ -22,25 +22,30 @@ The project aims to compare the performance of MLP models and Black-Scholes usin
 cmse492_project/
 │
 ├── MLP/                # Scripts for defining and training MLP models.
-│   ├── train_mlp.py    # Main script to train the MLP model.
-│   └── evaluate_mlp.py # Evaluates the performance of the MLP model.
+│   ├── training    # Main folder with scripts to train the MLP model.
+│   └── evaluation  # Evaluates the performance of the MLP model.
+│   └── models      # Saved models.
 │
 ├── black_scholes/      # Implementation of the Black-Scholes model.
-│   └── black_scholes.py # Baseline option pricing script.
+│   └── # Baseline option pricing script.
 │
 ├── data_exploration/   # Notebooks for exploratory data analysis.
-│   └── data_exploration.ipynb # Jupyter notebook for feature exploration.
+│   └── data_exploration.ipynb # Jupyter notebook for data exploration.
 │
 ├── datasets/           # Raw and processed datasets.
-│   ├── raw_data.csv    # Raw options data.
-│   └── processed_data.csv # Cleaned data used for training.
+│   ├── adidas_tick_options.csv    # Raw options data.
+│   └── call_options.csv # Data with European and American style Call Options
+│   └── put_options.csv # Data with European and American style Put Options
+│   └── call_eu_options.csv # Data with European style Call Options
+│   └── put_eu_options.csv # Data with European style Put Options
 │
 ├── results/            # Output files (plots, metrics, etc.)
-│   ├── results_mlp.png # MLP model performance plot.
-│   └── comparison.csv  # Comparison of Black-Scholes and MLP results.
+│   ├── # MLP model performance plots.
+│   └── # Comparison of Black-Scholes and MLP results.
+│   └── # Comparison of Black-Scholes and MLP results (tables).
 │
 ├── literature/         # Relevant literature used in the project.
-│   └── papers/         # PDFs of research papers.
+│   └── # PDFs of research papers.
 │
 └── README.md           # Project overview and setup instructions.
 ```
@@ -73,14 +78,8 @@ Make sure you have the following dependencies installed:
    ```
 
 3. **Run the Black-Scholes model**:
-   ```bash
-   python black_scholes/black_scholes.py
-   ```
 
 4. **Train the MLP model**:
-   ```bash
-   python MLP/train_mlp.py
-   ```
 
 5. **View the results**:
    Check the `results/` directory for evaluation metrics and plots.
